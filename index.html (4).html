@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Checkout!</title>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="../CSS/Cart.css">
+
+
+</head>
+<body class="body">
+    <header>
+        <div class="logo">
+            <img src="../Images/Logo.png" alt="Logo" height="100" width="200">
+        </div>
+        <nav>
+            <a href="../HTML/index.html" class="nav-link">Home</a>
+            <a href="../HTML/Products.html" class="nav-link">Shop</a>
+            <a href="../HTML/ContactUs.html" class="nav-link">Contact Us</a>
+            <a href="../HTML/AboutUs.html" class="nav-link">About Us</a>
+            <a href="../HTML/Cart.html" class="nav-link">Checkout</a>
+        </nav>
+    </header>
+    <section id="checkout-section">
+        <h1 class="main-title">Checkout!</h1>
+        <div class="custom-container">
+            <form method="post" action="/process">
+
+                <h3 class="title">Billing Address</h3>
+
+                <div class="input">
+                    <h4 class="input-label">Full Name</h4>
+                    <input type="text" class="custom-input" name="fullName" placeholder="Sarah Smith" maxlength="40"><br>
+
+                    <h4 class="input-label">Email</h4>
+                    <input type="text" class="custom-input" name="email" placeholder="******@hotmail.com" pattern="[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+\.[a-zA-Z]+\.*[a-zA-Z]*" minlength="8" maxlength="40"><br>
+
+                    <h4 class="input-label">City</h4>
+                    <input type="text" class="custom-input" name="city" placeholder="Jeddah" minlength="3" maxlength="15"><br>
+
+                    <h4 class="input-label">Address</h4>
+                    <input type="text" class="custom-input" name="address" placeholder="AR RABWAH, Almakarounah street" minlength="5" maxlength="40"><br>
+
+                    <h4 class="input-label">Zip Code</h4>
+                    <input type="text" class="custom-input" name="zipCode" placeholder="55505" maxlength="5"><br>
+                </div>
+
+                <div class="input">
+                    <h3 class="title">Payment</h3>
+
+                    <div class="card-details-container">
+                        <h4 class="input-label">Name on Card</h4>
+                        <input type="text" class="custom-input" name="cardName" placeholder="Sarah Smith" required minlength="10" maxlength="40">
+
+                        <h4 class="input-label">Credit Card Number</h4>
+                        <input type="text" class="custom-input" name="cardNumber" placeholder="****-****-****-****" minlength="19" maxlength="19" required>
+
+                        <h4 class="input-label">Exparation Date</h4>
+                        <input type="text" class="custom-input" name="exDate" placeholder="3/28/2024" required maxlength="30">
+
+                        <h4 class="input-label">CVV</h4>
+                        <input type="text" class="custom-input" name="cvv" placeholder="***" maxlength="3" minlength="3" required>
+                        <h3 class="title">Accepted Cards</h3>
+                        <div class="icon-container">
+                            <img src="../Images/mastercard.png" alt="mastercard icon" height="40">
+                            <img src="../Images/visa.png" alt="visa icon" height="40">
+                            <img src="../Images/mada.png" alt="mada icon" height="40">
+                            <img src="../Images/paypal.png" alt="paypal icon" height="40">
+                        </div>
+                        <input type="submit" value="Send" class="custom-send" formnovalidate>
+                    </div>
+                   
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-columns">
+            <div class="help-section">
+                <h4>Help</h4>
+                <ul>
+                    <li>Frequently Asked Questions</li>
+                    <li>Shop</li>
+                    <li>Terms and Conditions</li>
+                    <li>Order Tracking</li>
+                </ul>
+            </div>
+            <div class="online-shop-section">
+                <h4>Online Shop</h4>
+                <ul>
+                    <li>Hair Conditioner</li>
+                    <li>Hair Shampoo</li>
+                    <li>Hair Set</li>
+                    <li>Hair Cream</li>
+                </ul>
+            </div>
+            <div class="follow-us-section">
+                <h4>Follow Us</h4>
+                <div class="social-media">
+                    <a href="#"><img src="../Images/facebook.png" alt="Facebook" height="20"></a>
+                    <a href="#"><img src="../Images/instagram.png" alt="Instagram" height="20"></a>
+                    <a href="#"><img src="../Images/twitter.png" alt="Twitter" height="20"></a>
+                    <a href="#"><img src="../Images/linkedin.png" alt="LinkedIn" height="20"></a>
+                    <a href="#"><img src="../Images/snapchat.png" alt="Snapchat" height="20"></a>
+                    <a href="#"><img src="../Images/tik-tok.png" alt="Tik-Tok" height="20"></a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
